@@ -108,3 +108,28 @@ footer {
         width: 100%;
     }
 }
+/* ANIMACIÓN */
+section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* HERO (mejora inicio) */
+#inicio {
+    text-align: center;
+    background: linear-gradient(120deg, #0a3d62, #3c6382);
+    color: white;
+}
+
+/* NAV sticky */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
