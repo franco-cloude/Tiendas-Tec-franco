@@ -4,50 +4,64 @@
 <meta charset="UTF-8">
 <title>TecnoFix Huancayo</title>
 <link rel="stylesheet" href="estilos.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
+
 <header>
-<h1>TecnoFix Huancayo</h1>
-<nav>
-<a href="#inicio">Inicio</a>
-<a href="#nosotros">Nosotros</a>
-<a href="#servicios">Servicios</a>
-<a href="#contacto">Contacto</a>
-<a href="pagina-extra.html">Tienda</a>
-</nav>
+    <h1>TecnoFix Huancayo</h1>
+    <p>Soluciones tecnológicas confiables</p>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+        <a href="pagina-extra.html">Tienda</a>
+    </nav>
 </header>
 
 <section id="inicio">
-<h2>Bienvenido</h2>
-<p>Reparación profesional de computadoras en Huancayo.</p>
+    <h2>Bienvenido</h2>
+    <p>Reparación profesional de computadoras en Huancayo. Rápido, seguro y garantizado.</p>
 </section>
 
 <section id="nosotros">
-<h2>Nosotros</h2>
-<p>Empresa dedicada al mantenimiento y reparación de equipos.</p>
+    <h2>Nosotros</h2>
+    <p>Somos especialistas en mantenimiento y reparación de equipos informáticos con atención personalizada.</p>
 </section>
 
 <section id="servicios">
-<h2>Servicios</h2>
-<ul>
-<li>Formateo</li>
-<li>Instalación</li>
-<li>Reparación</li>
-</ul>
+    <h2>Servicios</h2>
+    <div class="cards">
+        <div class="card">💻 Formateo de PC</div>
+        <div class="card">⚙ Instalación de programas</div>
+        <div class="card">🔧 Reparación de laptops</div>
+    </div>
+</section>
+
+<section id="galeria">
+    <h2>Galería</h2>
+    <div class="galeria">
+        <img src="https://via.placeholder.com/300">
+        <img src="https://via.placeholder.com/300">
+        <img src="https://via.placeholder.com/300">
+    </div>
 </section>
 
 <section id="contacto">
-<h2>Contacto</h2>
-<form onsubmit="return validarFormulario()">
-<input type="text" id="nombre" placeholder="Nombre"><br>
-<input type="email" id="correo" placeholder="Correo"><br>
-<textarea id="mensaje" placeholder="Mensaje"></textarea><br>
-<button type="submit">Enviar</button>
-</form>
+    <h2>Contacto</h2>
+    <form onsubmit="return validarFormulario()">
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="email" id="correo" placeholder="Correo" required>
+        <textarea id="mensaje" placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
 </section>
 
 <footer>
-<p>Huancayo - Perú | tecnofix@gmail.com</p>
+    <p>📍 Huancayo - Perú | 📧 tecnofix@gmail.com</p>
 </footer>
 
 <script src="script.js"></script>
