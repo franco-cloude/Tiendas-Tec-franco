@@ -1,11 +1,13 @@
 function validarFormulario(){
-let n=document.getElementById("nombre").value;
-let c=document.getElementById("correo").value;
-let m=document.getElementById("mensaje").value;
-if(n==""||c==""||m==""){
-alert("Completa todos los campos");
-return false;
-}
-alert("Enviado correctamente");
-return true;
+    let nombre = document.getElementById("nombre").value.trim();
+    let correo = document.getElementById("correo").value.trim();
+    let mensaje = document.getElementById("mensaje").value.trim();
+
+    if(nombre === "" || correo === "" || mensaje === ""){
+        alert("⚠ Completa todos los campos");
+        return false;
+    }
+
+    alert("✅ Mensaje enviado correctamente");
+    return true;
 }
