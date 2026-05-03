@@ -11,3 +11,15 @@ function validarFormulario(){
     alert("✅ Mensaje enviado correctamente");
     return true;
 }
+
+/* ANIMACIONES AL HACER SCROLL */
+const secciones = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+    secciones.forEach(sec => {
+        const pos = sec.getBoundingClientRect().top;
+        if(pos < window.innerHeight - 100){
+            sec.classList.add("visible");
+        }
+    });
+});
