@@ -1,25 +1,14 @@
-function validarFormulario(){
-    let nombre = document.getElementById("nombre").value.trim();
-    let correo = document.getElementById("correo").value.trim();
-    let mensaje = document.getElementById("mensaje").value.trim();
+// Efecto simple para la galería y navegación
+document.addEventListener('DOMContentLoaded', () => {
+    console.log("Tiendas TEC - Huancayo: Proyecto cargado correctamente.");
 
-    if(nombre === "" || correo === "" || mensaje === ""){
-        alert("⚠ Completa todos los campos");
-        return false;
-    }
-
-    alert("✅ Mensaje enviado correctamente");
-    return true;
-}
-
-/* ANIMACIONES AL HACER SCROLL */
-const secciones = document.querySelectorAll("section");
-
-window.addEventListener("scroll", () => {
-    secciones.forEach(sec => {
-        const pos = sec.getBoundingClientRect().top;
-        if(pos < window.innerHeight - 100){
-            sec.classList.add("visible");
-        }
+    // Smooth scroll para los enlaces de anclaje
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
     });
 });
