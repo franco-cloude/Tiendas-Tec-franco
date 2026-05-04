@@ -1,77 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<h1>TecnoFix</h1>
-<p>Servicio técnico especializado en computadoras y laptops</p>
-<link rel="stylesheet" href="estilos.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiendas TEC - Expertos en Tecnología en Huancayo</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Font Awesome para los iconos de redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
+    <header>
+        <nav>
+            <div class="logo">Tiendas TEC</div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina-extra.html">Servicios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <h1>TecnoFix Huancayo</h1>
-    <p>Soluciones tecnológicas confiables</p>
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#galeria">Galería</a>
-        <a href="#contacto">Contacto</a>
-        <a href="pagina-extra.html">Tienda</a>
-    </nav>
-</header>
+    <main>
+        <section class="hero">
+            <h1>Expertos en Cómputo y Tecnología</h1>
+            <p>Ubicados en el corazón de Huancayo: Av. Giráldez N° 271.</p>
+            <a href="https://wa.me/51981305755" class="btn-cta" target="_blank">Escríbenos por WhatsApp</a>
+        </section>
 
-<section id="inicio">
-    <h2>Bienvenido</h2>
-    <p>Reparación profesional de computadoras en Huancayo. Rápido, seguro y garantizado.</p>
-</section>
+        <section id="galeria" class="galeria">
+            <h2>Nuestra Tienda y Productos</h2>
+            <div class="contenedor-galeria">
+                <img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?auto=format&fit=crop&w=400&q=80" alt="Laptops de alta gama">
+                <img src="https://images.unsplash.com/photo-1587831990711-23ca6441447b?auto=format&fit=crop&w=400&q=80" alt="Soporte técnico especializado">
+                <img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=400&q=80" alt="Componentes de PC Gamer">
+                <img src="https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&w=400&q=80" alt="Tienda en Huancayo">
+            </div>
+        </section>
+    </main>
 
-<section id="nosotros">
-    <h2>Nosotros</h2>
-    <p>Somos especialistas en mantenimiento y reparación de equipos informáticos con atención personalizada.</p>
-</section>
-
-<section id="servicios">
-    <h2>Servicios</h2>
-    <div class="cards">
-        <div class="card">💻 Formateo de PC</div>
-        <div class="card">⚙ Instalación de programas</div>
-        <div class="card">🔧 Reparación de laptops</div>
-    </div>
-</section>
-
-<section id="galeria">
-    <h2>Galería</h2>
-    <div class="galeria">
-        <img src="https://via.placeholder.com/300">
-        <img src="https://via.placeholder.com/300">
-        <img src="https://via.placeholder.com/300">
-    </div>
-</section>
-
-<section id="contacto">
-    <h2>Contacto</h2>
-    <form onsubmit="return validarFormulario()">
-        <input type="text" id="nombre" placeholder="Nombre" required>
-        <input type="email" id="correo" placeholder="Correo" required>
-        <textarea id="mensaje" placeholder="Mensaje" required></textarea>
-        <button type="submit">Enviar</button>
-    </form>
-</section>
-
-<footer>
-    <p>📍 Huancayo - Perú</p>
-    <p>📧 TecnofixHuancayo@gmail.com</p>
-
-    <div>
-        <a href="https://facebook.com" target="_blank">Facebook</a> |
-        <a href="https://instagram.com" target="_blank">Instagram</a> |
-        <a href="https://wa.me/51999999999" target="_blank">WhatsApp</a>
-    </div>
-</footer>
-
-<script src="script.js"></script>
+    <footer id="contacto">
+        <div class="footer-info">
+            <h3>Tiendas TEC Huancayo</h3>
+            <p>Sedes: Av. Giráldez N° 271 | Jr. Loreto 548.</p>
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/tiendastecperu" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://www.instagram.com/tiendastec" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://wa.me/51981305755" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+        <p>&copy; 2026 Tiendas TEC - Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
