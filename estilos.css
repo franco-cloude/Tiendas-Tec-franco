@@ -1,96 +1,24 @@
-/* Configuración General */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
+body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+
+nav { background: var(--oscuro); color: white; display: flex; justify-content: space-between; padding: 1rem 5%; align-items: center; }
+.logo span { color: var(--azul); font-weight: bold; }
+.nav-links { display: flex; list-style: none; gap: 20px; }
+.nav-links a { color: white; text-decoration: none; font-weight: bold; }
+
+.hero { 
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('http://googleusercontent.com/image_collection/image_retrieval/1577310665083108766');
+    height: 60vh; background-size: cover; color: white; display: flex; align-items: center; justify-content: center; text-align: center;
 }
 
-header {
-    background-color: #0046be; /* Azul corporativo de Tiendas TEC */
-    color: white;
-    padding: 1rem 0;
-}
+.btn { background: var(--azul); color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-}
+.grid-galeria { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; padding: 2rem 5%; }
+.grid-galeria img { width: 100%; height: 250px; object-fit: cover; border-radius: 10px; }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
+form { max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; padding: 2rem; }
+form input, form textarea { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+form button { background: var(--azul); color: white; border: none; padding: 15px; cursor: pointer; border-radius: 5px; }
 
-nav a {
-    color: white;
-    text-decoration: none;
-}
-
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80');
-    background-size: cover;
-    color: white;
-}
-
-.btn-cta {
-    background-color: #25d366;
-    color: white;
-    padding: 15px 25px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-/* Sección de Galería */
-.galeria {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.contenedor-galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    margin-top: 30px;
-}
-
-.contenedor-galeria img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s;
-}
-
-.contenedor-galeria img:hover {
-    transform: scale(1.05);
-}
-
-/* Footer y Redes */
-footer {
-    background-color: #222;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.redes-sociales {
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.redes-sociales a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
+footer { background: #222; color: white; padding: 2rem 5%; text-align: center; }
+.socials { font-size: 2rem; gap: 20px; display: flex; justify-content: center; margin-top: 10px; }
+.socials a { color: white; }
